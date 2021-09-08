@@ -18,5 +18,5 @@ This project is a algorithm about duplicate checking rate.
 | · Test Repor                            | · 测试报告                                 |             60               |                            |
 | · Size Measurement                      | · 计算工作量                               |             30               |                            |
 | · Postmortem & Process Improvement Plan | · 事后总结, 并提出过程改进计划             |               30             |                            |
-|                                         | · 合计                                     |              1490              |                            |
+|                                         | · 合计                                     |              1370              |                            |
 
