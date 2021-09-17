@@ -8,4 +8,4 @@
 
 此算法采用的分词器是IKAnalysis
 
-使用的方法有两个，分别为：simHash + Ja  和 余弦相似度。其中simHash + Ja  主要针对大文本，余弦相似度主要针对小文本，文本大小采用的是简单划分，超过30KB就是大文本，反之就是小文本
+使用的方法有两个，分别为：simHash + Jaccard Similarity  和 余弦相似度。其中simHash + Jaccard Similarity  主要针对大文本，余弦相似度主要针对小文本，文本大小采用的是简单划分，超过30KB就是大文本，反之就是小文本
