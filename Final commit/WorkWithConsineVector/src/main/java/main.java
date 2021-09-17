@@ -60,11 +60,11 @@ public class main {
                     DecimalFormat df = new DecimalFormat();
                     String s = df.format(sim);
                     System.out.println(s+"%");
-                    writeResultToFile(s3,s);
+                    writeResultToFile(s1,s2,s3,s);
                 }else {
                     double sim = SimHash.Construct(reader,reader1);
                     System.out.println("The analysis result is "+sim*100+"%");
-                    writeResultToFile(s3,String.valueOf(sim));
+                    writeResultToFile(s1,s2,s3,String.valueOf(sim));
                 }
             }else {
                 System.out.println("文件为空，请重新输入比较文本");
@@ -75,18 +75,20 @@ public class main {
         }
     }
 
-    public static void writeResultToFile(String path, String result) throws IOException {
+    public static void writeResultToFile(String origin, String compared,String path, String result) throws IOException {
         FileWriter writer = new FileWriter(new File(path),true);
         if (writer!=null){
             StringBuilder buffer = new StringBuilder();
             buffer.append("The origin text:");
-            //buffer.append("");
-            writer.flush();
+            buffer.append(origin);
+            buffer.append("\r\n");
             buffer.append("The compared text:");
-            //buffer.append("");
-            writer.flush();
+            buffer.append(compared);
+            buffer.append("\r\n");
             buffer.append("The compare result is: ");
             buffer.append(result+"%");
+            buffer.append("\r\n");
+            buffer.append("\r\n");
             writer.write(buffer.toString());
             writer.flush();
         }else {
