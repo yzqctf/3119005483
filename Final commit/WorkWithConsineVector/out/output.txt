@@ -1,0 +1,2 @@
+The compare result is: 93.4%
+The origin text:The compared text:The compare result is: 22.1%The origin text:The compared text:The compare result is: 100%The origin text:The compared text:The compare result is: 97.8%The origin text:The compared text:The compare result is: 22.1%The origin text:The compared text:The compare result is: 100%

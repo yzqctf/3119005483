@@ -1,0 +1,1 @@
+The compare result is: 100%
