@@ -55,7 +55,7 @@ public class main {
 
 
             if (f.length()!=0 && f1.length()!=0){
-                if (f.length()<=30000 || f1.length()<=30000){
+                if (f.length()<=30000){
                     double sim = 100* CalculateSimilar.getSimilar(reader,reader1);
                     DecimalFormat df = new DecimalFormat();
                     String s = df.format(sim);
