@@ -25,6 +25,9 @@ public class main {
         }else if (args.length<=0){
             System.out.println("请输入待比较文件");
             System.exit(1);
+        }else if (args.length!=3){
+            System.out.println("参数缺失，请按照格式输入哦");
+            System.exit(1);
         }
 
         String F1 = args[0];
