@@ -19,3 +19,5 @@ This project is a algorithm about duplicate checking rate.
 | · Size Measurement                      | · 计算工作量                               |             30               |               30             |
 | · Postmortem & Process Improvement Plan | · 事后总结, 并提出过程改进计划             |               30             |               120             |
 |                                         | · 合计                                     |              1370              |             1382               |
+
+附注：为了防止直接下载源代码出现奇奇怪怪的配置问题，我在release处提交了可运行的jar版本。只需要在release处下载即可，需要三个参数，1. 源文件绝对路径，2. 比较文件绝对路径，3. 测试结果输出绝对路径；如此即可。
