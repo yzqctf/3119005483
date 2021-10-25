@@ -173,7 +173,7 @@ public class GUI extends JFrame implements ActionListener {
                 }
 
             }
-        }else if (event.getSource() == actionCombobox){
+        }else if (event.getSource().equals(actionCombobox)){
             if (actionCombobox.getSelectedIndex() == 1){
                 maxNumber_textField.setEditable(false);
                 rangeValue_textField.setEditable(false);
@@ -182,7 +182,7 @@ public class GUI extends JFrame implements ActionListener {
                 rangeValue_textField.setEditable(true);
             }
         }else{
-            if(event.getSource() == directoryPath_button) {
+            if(event.getSource().equals(directoryPath_button)) {
                 File file = openChoseWindow(JFileChooser.FILES_AND_DIRECTORIES);
                 if(file == null)
                     return;
@@ -195,7 +195,7 @@ public class GUI extends JFrame implements ActionListener {
                     outputFilePath_textField.setText(file.getParentFile() + "\\Answers.txt");
                     gradePath = file.getParentFile() + "\\Grade.txt";
                 }
-            }else if(event.getSource() == outputFilePath_button){
+            }else if(event.getSource().equals(outputFilePath_button)){
                 File file = openChoseWindow(JFileChooser.FILES_AND_DIRECTORIES);
                 if(file == null)
                     return;
