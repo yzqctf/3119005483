@@ -187,7 +187,8 @@ public class AlgoArithmetic {
 
     //判断correct题目数
     public static String check(String path,String ans, String output) throws IOException {
-        String thisLine,thisLine1;
+        String thisLine,
+        thisLine1;
         BufferedReader reader = null;
         FileInputStream inputStream = new FileInputStream(path);
         reader = new BufferedReader(new InputStreamReader(inputStream));
