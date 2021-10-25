@@ -30,10 +30,10 @@ public class AlgoArithmetic {
 
     private static String[] BRACKETS = {"(",")"};
 
-    public AlgoArithmetic(int n, int r){
-        this.NUMBER_PROBLEMS = n;
-        this.RANGEVALUE = r;
-    }
+//     public AlgoArithmetic(int n, int r){
+//         this.NUMBER_PROBLEMS = n;
+//         this.RANGEVALUE = r;
+//     }
 
     public static void main(String[] args) throws IOException {
         long start = System.currentTimeMillis();
