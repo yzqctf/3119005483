@@ -134,7 +134,7 @@ public class GUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent event) {
         System.out.println(event.getActionCommand());
-        if(event.getSource() == start_button){
+        if(event.getSource().equals(start_button)){
             //确认对话框弹出
             int result = JOptionPane.showConfirmDialog(null, "是否开始运行?", "确认", 0);//YES_NO_OPTION
             if (result == 1) { //是：0，否：1，取消：2
