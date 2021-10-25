@@ -97,7 +97,7 @@ public class AlgoCalculate {
 
     //具体的运算需要: 后缀表达式；
     public static String processCalculate(List<String> rpn){
-        Stack<String> numberStack = new Stack();;
+        Stack<String> numberStack = new Stack();
         int length = rpn.size();
 
         for (int i=0;i<length;i++){
