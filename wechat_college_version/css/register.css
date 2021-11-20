@@ -1,0 +1,220 @@
+.div{
+
+    border: none;
+    border-bottom-color: #178fef;
+    width: 308px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+span{
+    font-family: 黑体;
+    color: #1d93f0;
+    font-size: 18px;
+}
+
+input{
+    border: none;
+    background: transparent;
+    width: 351px;
+    height: 32px;
+    font-size: 25px;
+    font-family: 微软雅黑;
+    caret-color: #398fef;
+    color: #178fef;
+}
+
+#loginall{
+    position: relative;
+    background: #ffffffe3;
+    width: 700px;
+    height: 638px;
+    left: 28%;
+    top: 0%;
+    border: none;
+    border-radius: 5px;
+}
+
+#login1{
+    position: relative;
+    top: 41px;
+    border: none;
+    border-bottom-color: #178fef;
+    width: 446px;
+    left: 137px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#login2, #nick_name, #mailboxdiv, #phonediv, #id_card{
+    position: relative;
+    border: none;
+    border-bottom-color: #178fef;
+    width: 446px;
+    left: 137px;
+    top: 67px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#logininput{
+    border: none;
+    background: transparent;
+    position: relative;
+    left: 2px;
+    width: 348px;
+    height: 32px;
+    top: 0px;
+    font-size: 25px;
+    font-family: 微软雅黑;
+    caret-color: #398fef;
+    color: #178fef;
+}
+
+#loginspan,#pwdspan, #codespan ,#nickspan, #mailspan, #phonespan, #idcardspan{
+    font-family: 黑体;
+    color: #1d93f0;
+    position: relative;
+    left: 7px;
+    top: 5px;
+    font-size: 18px;
+}
+
+
+#password{
+    border: none;
+    background: transparent;
+    position: relative;
+    left: 2px;
+    width: 349px;
+    height: 32px;
+    top: 0px;
+    font-size: 25px;
+    font-family: 微软雅黑;
+    caret-color: #398fef;
+    color: #178fef;
+}
+
+#loginHead{
+    font-family: 黑体;
+    font-size: xx-large;
+    position: relative;
+    left: 274px;
+    top: 40px;
+    width: 134px;
+    color: #178fef;
+    border-bottom-style: solid;
+}
+
+#logininput:focus,#password:focus, #code:focus,#nickName, #mailbox, #phone, #idCard{
+    outline: 0px;
+}
+
+#loginback{
+    background: url(../image/login.png);
+    background-repeat: no-repeat;
+}
+
+#loginsubmit{
+    width: 231px;
+    min-height: 15px;
+    display: block;
+    background-color: #178fefcc;
+    border: none;
+    color: #fff;
+    padding: 9px 14px;
+    font-size: 15px;
+    line-height: normal;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: inherit;
+    font-weight: bolder;
+    position: absolute;
+    top: 534px;
+    left: 225px;
+    HEIGHT: 51PX;
+}
+
+#loginsubmit:hover{
+    background: #178fef;
+}
+
+#divregis{
+    position: absolute;
+    top: 587px;
+    left: 489px;
+}
+
+#divtravel{
+    position: absolute;
+    top: 608px;
+    left: 489px;
+}
+
+
+#aregis, #atravel{
+    text-decoration: none;
+    color: #1d405b;
+}
+
+#aregis:hover, #atravel:hover{
+    color: #45a5f2;
+}
+
+#code{
+    border: none;
+    background: transparent;
+    position: relative;
+    left: 2px;
+    width: 80px;
+    height: 32px;
+    top: 0px;
+    font-size: 25px;
+    font-family: 微软雅黑;
+    caret-color: #398fef;
+    color: #178fef;
+}
+
+#codediv {
+    position: relative;
+    top: 96px;
+    border: none;
+    border-bottom-color: #178fef;
+    width: 306px;
+    left: 137px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#acode{
+    position: absolute;
+    left: 185px;
+    bottom: 6px;
+}
+
+#idCard{
+    width:306px;
+}
+
+#nick_name{
+    margin-top: 19px;
+}
+
+#mailboxdiv{
+    margin-top: 19px;
+}
+
+#phonediv{
+    margin-top: 20px;
+}
+
+#id_card{
+    margin-top: 13px;
+}
+
+#mailbox{
+    width: 343px;
+}
+
+#imgCode:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,169 @@
+#loginall{
+    position: relative;
+    background: #ffffffe3;
+    width: 350px;
+    height: 400px;
+    left: 39%;
+    top: 17%;
+    border: none;
+    border-radius: 5px;
+}
+
+#login1{
+    position: relative;
+    top: 41px;
+    border: none;
+    border-bottom-color: #178fef;
+    width: 308px;
+    left: 21px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#login2{
+    position: relative;
+    border: none;
+    border-bottom-color: #178fef;
+    width: 308px;
+    left: 22px;
+    top: 67px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#logininput{
+    border: none;
+    background: transparent;
+    position: relative;
+    left: 2px;
+    width: 195px;
+    height: 32px;
+    top: 0px;
+    font-size: 25px;
+    font-family: 微软雅黑;
+    caret-color: #398fef;
+    color: #178fef;
+}
+
+#loginspan,#pwdspan, #codespan{
+    font-family: 黑体;
+    color: #1d93f0;
+    position: relative;
+    left: 7px;
+    top: 5px;
+    font-size: 18px;
+}
+
+
+#password{
+    border: none;
+    background: transparent;
+    position: relative;
+    left: 2px;
+    width: 195px;
+    height: 32px;
+    top: 0px;
+    font-size: 25px;
+    font-family: 微软雅黑;
+    caret-color: #398fef;
+    color: #178fef;
+}
+
+#loginHead{
+    font-family: 黑体;
+    font-size: xx-large;
+    position: relative;
+    left: 103px;
+    top: 20px;
+    width: 134px;
+    color: #178fef;
+    border-bottom-style: solid;
+}
+
+#logininput:focus,#password:focus, #code:focus{
+    outline: 0px;
+}
+
+#loginback{
+    background: url(../image/background/login.jpg);
+    background-repeat: no-repeat;
+}
+
+#loginsubmit{
+    width: 231px;
+    min-height: 15px;
+    display: block;
+    background-color: #178fefcc;
+    border: none;
+    color: #fff;
+    padding: 9px 14px;
+    font-size: 15px;
+    line-height: normal;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: inherit;
+    font-weight: bolder;
+    position: absolute;
+    top: 294px;
+    left: 59px;
+}
+
+#loginsubmit:hover{
+    background: #178fef;
+}
+
+#divregis{
+    position: absolute;
+    top: 373px;
+    left: 191px;
+}
+
+#divtravel{
+    position: absolute;
+    top: 351px;
+    left: 191px
+}
+
+#aregis, #atravel{
+    text-decoration: none;
+    color: #1d405b;
+}
+
+#aregis:hover, #atravel:hover{
+    color: #45a5f2;
+}
+
+#code{
+    border: none;
+    background: transparent;
+    position: relative;
+    left: 2px;
+    width: 80px;
+    height: 32px;
+    top: 0px;
+    font-size: 25px;
+    font-family: 微软雅黑;
+    caret-color: #398fef;
+    color: #178fef;
+}
+
+#codediv {
+    position: relative;
+    top: 89px;
+    border: none;
+    border-bottom-color: #178fef;
+    width: 187px;
+    left: 21px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#acode{
+    position: absolute;
+    left: 185px;
+    bottom: 6px;
+}
+
+#imgCode:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,308 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: -1px;
+    height: 66px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #49a4f3;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+
+li a.active {
+    color: #49a4f3;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+/* 下拉按钮样式 */
+.dropbtn {
+    background-color: #ffffff;
+    color: #666666;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    bottom: 2px;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    color: #49a4f3;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+/* 图像部分 */
+.fakeimg {
+    background-color: #aaa;
+    width: 81%;
+    padding: 20px;
+    position: absolute;
+    top: 88px;
+}
+
+/* 文章卡片效果 */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    top: 72px;
+    left: 7%;
+    width: 82%;
+    height: 482px;
+    z-index: -1;
+}
+
+.content{
+    position: relative;
+    left: 28px;
+    width: 505px;
+    height: 458px;
+    border-right-style: dashed;
+    border-right-color: slategrey;
+    border-right-width: 5px;
+}
+
+.remark{
+    position: absolute;
+    top: -22px;
+    left: 51%;
+    width: 470px;
+    height: 463px;
+    margin: 20px;
+    padding: 20px;
+    z-index: -1;
+}
+
+.cp-item{
+    position: absolute;
+    top: 353px;
+    left: 303px;
+}
+
+.a1{
+    display: table;
+    color: #534c4c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    top: -78px;
+    right: 310px;
+    background: #fff;
+}
+
+.comment{
+    margin-top: 0px;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    height: 104px;
+}
+
+.a1:hover, .a2:hover{
+    color: #49a4f3;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+
+#comment{
+    position: absolute;
+    left: 1323px;
+    bottom: 143px;
+    display: table;
+}
+
+#myBtn, #myBtn2{
+    POSITION: absolute;
+    left: 360px;
+    top: 14px;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+#myBtn:hover, #myBtn2:hover{
+    cursor: pointer;
+    color: #49a4f3;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+
+#issue, #issue2{
+    position: relative;
+    width: 322px;
+    height: 153px;
+    left: 4px;
+    font-family: 黑体;
+    font-size: 15px;
+    top: 50px;
+}
+
+#issueDiv{
+    position: absolute;
+    padding: 20px;
+    left: 30%;
+    top: 19%;
+    width: 337px;
+    margin: 10px;
+    height: 280px;
+    background: #dcebed;
+}
+
+#issueSubmit, #issueSubmit2{
+    position: relative;
+    left: -193px;
+    top: 104px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+}
+#issueSubmit:hover, #issueSubmit2:hover{
+    cursor: pointer;
+    color: #49a4f3;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+
+.a2{
+    display: table;
+    color: #534c4c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: #fff;
+}
+
+/* 弹窗 (background) */
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* 弹窗内容 */
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* 添加动画 */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* 关闭按钮 */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #49a4f3;
+    color: #ffffff;
+    font-family: 微软雅黑;
+}
+
+.modal-body {
+    padding: 3px 198px;
+    margin-left: 20%;
+    height: 334px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #49a4f3;
+    color: #ffffff;
+    font-family: 微软雅黑;
+}
+
+#like:focus{
+    outline: 0px;
+}
