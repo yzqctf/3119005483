@@ -1,0 +1,365 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: -1px;
+    height: 66px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #49a4f3;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+
+li a.active {
+    color: #49a4f3;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+/* 下拉按钮样式 */
+.dropbtn {
+    background-color: #ffffff;
+    color: #666666;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    bottom: 2px;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    color: #49a4f3;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+
+#main{
+    background: #ebebeb;
+    width: 63%;
+    height: 587px;
+    position: absolute;
+    left: 185px;
+    top: 68px;
+    z-index: -1;
+}
+
+#text{
+    position: absolute;
+    width: 587px;
+    height: 391px;
+    background: #d7d5d54f;
+    border-style: groove;
+    border-width: 1px;
+    left: 291px;
+    top: 65px;
+    color: gray;
+    overflow-y: scroll;
+    max-width: 587px;
+    overflow-x: hidden;
+}
+
+#send{
+    width: 588px;
+    height: 127px;
+    background: white;
+    border: none;
+    border-top-style: solid;
+    border-top-width: 1px;
+    position: absolute;
+    top: 458px;
+    left: 291px;
+    color: gray;
+    background: #c0c0c02e;
+}
+
+#sendBtn{
+    position: absolute;
+    left: 526px;
+    width: 62px;
+    height: 31px;
+    background: #49a4f3;
+    border: none;
+    font-size: unset;
+    color: white;
+    font-family: 黑体;
+    top: 97px;
+}
+
+#sendBtn:hover{
+    cursor: pointer;
+    background: #35bbfd;
+}
+
+#sendText{
+    position: absolute;
+    width: 520px;
+    height: 124px;
+    font-family: 微软雅黑;
+    color: darkslategray;
+    border: none;
+    border-left-style: solid;
+    border-left-width: 1px;
+    top: 0px;
+    background: #c0c0c000;
+}
+#sendText:focus{
+    outline: 0px;
+}
+
+#userList{
+    position: absolute;
+    height: 587px;
+    background: #e3e1e1;
+    width: 199px;
+    left: 879px;
+    top: 0px;
+    border-style: solid;
+    border-width: 1px;
+    color: gray;
+    overflow: auto;
+}
+#header{
+    width: 498px;
+    left: 314px;
+    position: absolute;
+    height: 28px;
+    font-size: 23px;
+    text-align: center;
+    color: dimgray;
+    padding: 19px;
+}
+.header{
+    text-decoration: none;
+    color: #68c864;
+    margin-left: 34px;
+    position: relative;
+    bottom: 27px;
+}
+
+
+.header:hover{
+    border-bottom-style: solid;
+    cursor: pointer;
+}
+
+
+.left{
+    min-height: 40px;
+    position: relative;
+    display: table;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #9EEA6A;
+    left: 12px;
+    top: 35px;
+}
+.right{      /*使左右的对话框分开*/
+    top: 26px;
+    left: -12px;
+    min-height: 40px;
+    position: relative;
+    display: table;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #9EEA6A;
+    float: right;
+}
+.left > p,.right > p{    /*使内容居中*/
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+    max-width: 404px;
+}
+.left:before,.right:after{   /*用伪类写出小三角形*/
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    position: absolute;
+    top: 11px;
+}
+/*分别给左右两边的小三角形定位*/
+.left:before{
+    border-right: 8px solid #9EEA6A;
+    left: -16px;
+}
+.right:after{
+    border-left: 8px solid #9EEA6A;
+    right: -16px;
+}
+
+
+.chat{
+    width: 291px;
+    height: 589px;
+    background: #2e3641;
+}
+
+.chat div{
+    width: 100%;
+    height: 52px;
+}
+
+.chat  button{
+    width: 100%;
+    height: 53px;
+    background: #2e3641;
+    border: none;
+}
+
+.chat  button:focus{
+    outline: 0px;
+    background-color: #3a3f45;
+}
+
+.chat button:hover{
+    cursor: pointer;
+    background-color: #090909;
+}
+
+
+#sendMsg{
+    position: relative;
+    font-size: 10px;
+    top: 9px;
+    text-align: center;
+}
+
+.img{
+    width: 30px;
+    max-width: 30px;
+    height: 30px;
+    max-height: 30px;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 58px;
+}
+
+.span{
+    position: relative;
+    color: white;
+    right: 6px;
+}
+
+#alert{
+    text-align: center;
+    position: relative;
+    font-size: 11px;
+}
+
+.userList{
+    width: 199px;
+    height: 40px;
+}
+
+.spanBtn{
+    display: none;
+    position: absolute;
+    left: 84px;
+}
+
+.aMember{
+    width: 199px;
+    position: relative;
+    text-align: center;
+    height: 50px;
+    background: darkgray;
+}
+
+.aMember a{
+    position: relative;
+    top: 12px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.aMember:hover{
+    background: darkslategray;
+    cursor: pointer;
+}
+.aout{
+    position: absolute;
+    left: 214px;
+    text-decoration: none;
+    color: slategray;
+}
+.aout:hover{
+    border-bottom-style: solid;
+    border-bottom-color: #fef6ff;
+    color: #fef6ff;
+}
+
+#addMem,#addGroup{
+    background: white;
+    width: 573px;
+    height: 393px;
+    position: absolute;
+    left: 292px;
+    top: 65px;
+    overflow-x: hidden;
+}
+
+#commit:hover{
+    border-bottom-style: solid;
+}
+
+.aMember span{
+    position: absolute;
+    left: 3px;
+    color: white;
+}
