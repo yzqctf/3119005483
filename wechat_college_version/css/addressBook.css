@@ -1,0 +1,276 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: -1px;
+    height: 66px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #49a4f3;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+
+li a.active {
+    color: #49a4f3;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+
+/* 下拉按钮样式 */
+.dropbtn {
+    background-color: #ffffff;
+    color: #666666;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    bottom: 2px;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    color: #49a4f3;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+}
+
+#main {
+    padding: 20px;
+    margin: 7px;
+    position: relative;
+    width: 54%;
+    height: 524px;
+    background: white;
+    top: 16px;
+    left: 323px;
+    z-index: -1;
+}
+
+#userList {
+    display: table-caption;
+}
+
+#userMsg {
+    position: absolute;
+    left: 265px;
+    bottom: 60%;
+}
+
+
+#userList button {
+    border: none;
+    width: 239px;
+    height: 44px;
+    position: relative;
+    top: 14px;
+}
+
+.msg {
+    width: 100px;
+    text-align: right;
+    font-size: 14px;
+    color: #4d4d4d;
+    display: table;
+    position: relative;
+    left: 192px;
+    top: 99px;
+    margin-top: 26px;
+}
+
+.show {
+    position: relative;
+    display: table;
+    left: 311px;
+    color: gray;
+    margin-top: 23px;
+}
+
+#signature {
+    position: relative;
+    left: 7px;
+    top: 160px;
+}
+
+#signatureShow {
+    position: relative;
+    left: 47px;
+    top: 145px;
+}
+
+#userMsg button {
+    position: relative;
+    left: 341px;
+    top: 304px;
+    border: none;
+    background: transparent;
+}
+
+#userMsg button:hover, #userList button:hover {
+    cursor: pointer;
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+    color: #49a4f3;
+}
+
+#userMsg button:focus, #userList button:focus {
+    outline: 0px;
+    background: #49a4f3;
+    color: white;
+}
+
+.search {
+    border: solid;
+    border-width: 1px;
+    width: 167px;
+}
+
+.search input {
+    width: 144px;
+    border: none;
+    position: relative;
+    top: -2px;
+}
+
+.search input:focus {
+    outline: 0px;
+}
+
+.search img:hover {
+    cursor: pointer;
+}
+
+#addFriend, #agreeFriend {
+    width: 254px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    top: 37px;
+    left: 276px;
+    border-left-style: groove;
+}
+
+#nickAdd, #nickAgree, #nickConfirm {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+}
+
+#loginAdd, #loginAgree, #loginConfirm {
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    font-size: 12px;
+    color: gray;
+}
+
+#aAdd {
+    position: absolute;
+    left: 72%;
+    top: 16px;
+    text-decoration: none;
+    color: gray;
+}
+
+#aAdd:hover, #aApply:hover {
+    cursor: pointer;
+    border-bottom-style: solid;
+    color: steelblue;
+}
+
+#agreeFriend {
+    left: 538px;
+    top: 30px;
+}
+
+#aApply {
+    position: absolute;
+    left: 195px;
+    top: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.agree {
+    position: absolute;
+    left: 166px;
+    top: 15px;
+    text-decoration: none;
+    color: gray;
+}
+
+.agree:hover {
+    border-bottom-style: solid;
+    color: #0dcac3;
+}
+
+.aPage {
+    background: white;
+    height: 38px;
+}
+
+.aPage:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #49a4f3;
+    border-bottom-width: 2px;
+}
+
+.chatBtn {
+    position: relative;
+    left: 400px;
+    top: 295px;
+}
